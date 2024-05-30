@@ -1,7 +1,6 @@
 <?php
 include_once 'koneksi.php';
 
-$id = $_POST['id'];
 $nama = $_POST['nama'];
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -9,7 +8,7 @@ $password = $_POST['password'];
 $insert = $koneksi->query("INSERT INTO user 
 (id, nama, email, password) 
 values
-($id, '$nama', '$email', '$password')
+(null, '$nama', '$email', '$password')
 ");
 
 if ($insert) {

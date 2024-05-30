@@ -7,10 +7,8 @@
 </head>
 <body>
     <?php
-    session_start();
-    if (!$_SESSION['user_login']) {
-        header("Location: login.php");
-    }
+    include_once "menu.php";
+    include_once "check_login.php";
 
     $user = $_SESSION['user_login'];
     ?>
